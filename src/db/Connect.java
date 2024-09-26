@@ -12,9 +12,9 @@ public class Connect {
 
 	public static Connection criarConexao() throws ClassNotFoundException, SQLException {
 		Class.forName("org.postgresql.Driver");
-		Connection conecta = DriverManager.getConnection(URL, USER, PASS);
-		if (conecta != null) {
-			return conecta;
+		Connection connect = DriverManager.getConnection(URL, USER, PASS);
+		if (connect != null) {
+			return connect;
 		}
 		return null;
 	}
